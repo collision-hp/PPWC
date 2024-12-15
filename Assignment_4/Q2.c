@@ -7,7 +7,6 @@ void swap(int *a,int *b){
 int main(){
 	int a=345;
 	int b=45;
-	char var='Z';
 	printf("%d %p\n",a,&a);
 	printf("%d %p\n",b,&b);
 	swap(&a,&b);

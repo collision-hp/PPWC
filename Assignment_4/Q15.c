@@ -10,23 +10,21 @@ int main(){
     *cp=89;
     int *dp=&d;
     *dp=68;
-    printf("%d\n",a);
-    printf("%d\n",b);
-    printf("%d\n",c);
-    printf("%d\n",d);
-    int max;
-    if(*ap>*bp && *ap>*cp && *ap>*dp){
-        max=*ap;
+    // printf("%d\n",a);
+    // printf("%d\n",b);
+    // printf("%d\n",c);
+    // printf("%d\n",d);
+    int max=b;
+    if(a>max){
+        max=a;
     }
-    else if(*bp>*ap && *bp>*cp && *bp>*dp){
-        max=*bp;
+    if(c>max){
+        max=c;
     }
-    else if(*cp>*ap && *cp>*bp && *cp>*dp){
-        max=*bp;
+    if(d>max){
+        max=d;
     }
-    else if(*dp>*ap && *dp>*cp && *dp>*bp){
-        max=*bp;
-    }
-    printf("%d ",max);
+    int *maxvar=&max;
+    printf("%d ",*maxvar);
     return 0;
 }
